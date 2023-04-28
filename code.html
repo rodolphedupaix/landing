@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation sur Booking</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Vols</a></li>
+                <li><a href="#">Vols + Hotel</a></li>
+                <li><a href="#">Contact</a></li>       
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Réservez votre séjour sur Booking</h1>
+        <form action="results.html" method="get">
+            <label for="destination">Destination :</label>
+            <input type="text" id="destination" name="destination"><br>
+
+             <label for="checkin">Date d'arrivée :</label>
+        <input type="date" id="checkin" name="checkin"><br>
+
+        <label for="checkout">Date de départ :</label>
+        <input type="date" id="checkout" name="checkout"><br>
+
+        <label for="chambres">Nombre de chambres :</label>
+        <input type="number" id="chambres" name="chambres" min="1" max="10"><br>
+
+        <label for="adultes">Nombre d'adultes :</label>
+        <input type="number" id="adultes" name="adultes" min="1" max="10"><br>
+
+        <label for="enfants">Nombre d'enfants :</label>
+        <input type="number" id="enfants" name="enfants" min="0" max="10"><br>
+
+        <label for="type-chambre">Type de chambre :</label>
+        <select name="type-chambre" id="type-chambre">
+            <option value="standard">Standard</option>
+
+            <label for="options">Options :</label><br>
+            <input type="checkbox" id="petit-dej" name="petit-dej" value="petit-dej">
+            <label for="petit-dej">Petit déjeuner inclus</label><br>
+
+            <input type="submit" value="Rechercher sur Booking">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Réservation Booking. Tous droits réservés à Rodolphe Dupaix.</p>
+    </footer>
+</body>
+</html>
+
