@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Réservation de vols et hôtels</title>
+	<head>
+	<title>Réservation de vols et hôtels</title>
+	<style>
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #3A5D8F;
+		}nav li {
+		float: left;
+	}
+
+	nav li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	nav li a:hover {
+		background-color: #3A5D8F;
+	}
+
+	h1, h2, h3 {
+		font-family: Arial, sans-serif;
+	}
+
+	form {
+		max-width: 800px;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #3A5D8F;
+	}
+
+	label {
+		display: block;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+
+	input[type="text"], input[type="date"], input[type="number"] {
+		padding: 10px;
+		width: 100%;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+
+	button[type="submit"] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 16px;
+		margin-top: 20px;
+	}
+
+	button[type="submit"]:hover {
+		background-color: #45a049;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+
+	li {
+		width: calc(50% - 10px);
+		margin-bottom: 20px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 20px;
+		box-sizing: border-box;
+		background-color: #fff;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	}
+
+	li h3 {
+		margin-top: 0;
+	}
+
+	li p {
+		margin: 5px 0;
+	}
+
+	li button[type="submit"] {
+		margin-top: 10px;
+	}
+</style>
+</head>
+<header>
+        <nav>
+            <ul>
+                <li><a href="index.html.html">Accueil</a></li>
+                <li><a href="pagehotels.html">Hotels</a></li>
+                <li><a href="pageavions.html">Vols</a></li>
+                <li><a href="pagehotels+avions.html">Vols + Hôtel</a></li>
+                <li><a href="#">Contact</a></li>       
+            </ul>
+        </nav>
+</header>
+<body>
+	<h1>Réservation de vols et hôtels</h1>
+
+	<form>
+		<h2>Vols</h2>
+
+		<label for="departure">Départ</label>
+		<input type="text" id="departure" name="departure" placeholder="Ville de départ"><br>
+
+		<label for="arrival">Arrivée</label>
+		<input type="text" id="arrival" name="arrival" placeholder="Ville d'arrivée"><br>
+
+		<label for="date">Date</label>
+		<input type="date" id="date" name="date"><br>
+
+		<h2>Hôtels</h2>
+
+		<label for="checkin">Date d'arrivée</label>
+		<input type="date" id="checkin" name="checkin"><br>
+
+		<label for="checkout">Date de départ</label>
+		<input type="date" id="checkout" name="checkout"><br>
+
+		<label for="guests">Nombre de personnes</label>
+		<input type="number" id="guests" name="guests" min="1" max="10"><br>
+
+		<h2>Propositions de vols et d'hôtels</h2>
+
+		<ul>
+			<li>
+				<h3>Vol 1</h3>
+				<img src="hotel2etoiles.jpeg" alt="hotel" width="350" height="200">
+				<p>Prix : 500 €</p>
+				<p>Hôtel : Hôtel 1 (4 étoiles)</p>
+				<button type="submit">Réserver</button>
+			</li>
+			<li>
+				<h3>Vol 2</h3>
+				<img src="hotelplage.jpeg" alt="hotel" width="350" height="200">
+				<p>Prix : 600 €</p>
+				<p>Hôtel : Hôtel 2 (3 étoiles)</p>
+				<button type="submit">Réserver</button>
+			</li>
+			<li>
+				<h3>Vol 3</h3>
+				<img src="hotelluxe.jpeg" alt="hotel" width="350" height="200">
+				<p>Prix : 700 €</p>
+				<p>Hôtel : Hôtel 3 (5 étoiles)</p>
+				<button type="submit">Réserver</button>
+			</li>
+			<li>
+				<h3>Vol 4</h3>
+				<img src="hotelparc.jpeg" alt="hotel" width="350" height="200">
+				<p>Prix : 800 €</p>
+				<p>Hôtel : Hôtel 4 (4 étoiles)</p>
+				<button type="submit">Réserver</button>
+			</li>
+			<li>
+				<h3>Vol 5</h3>
+				<img src="hotelart.jpeg" alt="hotel" width="350" height="200">
+				<p>Prix : 900 €</p>
+				<p>Hôtel : Hôtel 5 (3 étoiles)</p>
+				<button type="submit">Réserver</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
